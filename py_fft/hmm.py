@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-file = 'A1808'
+file = 'A1802'
 
 # Load data
 data = np.loadtxt(f"./data/{file}.txt")
@@ -32,7 +32,8 @@ plt.title('FFT Magnitude Spectrum')
 plt.xlabel('Frequency')
 plt.ylabel('Magnitude')
 plt.grid(True)
-plt.xlim(-0.01, 0.01)  # Adjust this range based on data
+plt.xlim(0.001, 0.02)
+plt.xlim(0.001, 0.02)
 plt.legend()
 
 # Argument (phase) plot
@@ -42,7 +43,7 @@ plt.title('FFT Phase Spectrum')
 plt.xlabel('Frequency')
 plt.ylabel('Phase (radians)')
 plt.grid(True)
-plt.xlim(-0.01, 0.01)  # Adjust this range based on data
+plt.xlim(0.001, 0.02)
 plt.legend()
 
 plt.tight_layout()
